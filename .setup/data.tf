@@ -1,0 +1,1 @@
+data "tfe_organization" "current" {}

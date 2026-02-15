@@ -17,11 +17,5 @@ terraform {
       version = "~> 3.7.0"
     }
   }
-  cloud {
-    organization = "example"
-    workspaces {
-      name = "example"
-    }
-  }
 }
 
