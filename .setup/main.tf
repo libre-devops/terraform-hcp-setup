@@ -11,7 +11,7 @@ locals {
 }
 
 
-  workspaces = toset(["foundations", "automation", "integration"])
+  workspaces = toset(["foundation", "automation", "integration"])
 
   shared_vars = {
     env              = var.env

@@ -20,7 +20,6 @@ variable "layer_name" {
   }
 }
 
-
 variable "long_region" {
   type        = string
   description = "Long code for Azure region. Allowed values: uksouth, ukwest, westeurope."

@@ -20,7 +20,6 @@ variable "layer_name" {
   }
 }
 
-
 variable "long_region" {
   type        = string
   description = "Long code for Azure region. Allowed values: uksouth, ukwest, westeurope."
@@ -52,19 +51,4 @@ variable "short_region" {
     condition     = contains(["uks", "ukw", "euw"], lower(trimspace(var.short_region)))
     error_message = "short_region must be one of: uks, ukw, euw (case-insensitive)."
   }
-}
-
-variable "resource_group_name" {
-  type = string
-  description = "The resource group name to place resources in"
-}
-
-variable "resource_group_id" {
-  type = string
-  description = "The resource group id to place resources in"
-}
-
-variable "location" {
-  type = string
-  description = "The location for the resources, passed from resource group output"
 }

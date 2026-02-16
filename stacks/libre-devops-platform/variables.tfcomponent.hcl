@@ -17,12 +17,14 @@ variable "tenant_id" {
   type        = string
   description = "Azure tenant ID (GUID)."
   ephemeral   = true
+
 }
 
 variable "subscription_id" {
   type        = string
   description = "Azure subscription ID (GUID)."
   ephemeral   = true
+
 }
 
 variable "short" {

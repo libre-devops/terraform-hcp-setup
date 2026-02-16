@@ -19,8 +19,6 @@ variable "layer_name" {
     error_message = "layer_name must be one of: foundation, automation, integration (case-insensitive)."
   }
 }
-
-
 variable "long_region" {
   type        = string
   description = "Long code for Azure region. Allowed values: uksouth, ukwest, westeurope."

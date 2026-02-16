@@ -1,6 +1,6 @@
 ```hcl
 locals {
-  workspaces = toset(["foundations", "automation", "integrations"])
+  workspaces = toset(["foundation", "automation", "integrations"])
   shared_vars = {
     env              = var.env
     short_region     = var.short_region
@@ -16,7 +16,7 @@ locals {
   fic_bindings = {
     for pair in setproduct(local.workspaces, local.run_phases) :
     "${pair[0]}:${pair[1]}" => {
-      workspace_short = pair[0] # foundations / automation / integrations
+      workspace_short = pair[0] # foundation / automation / integrations
       run_phase       = pair[1] # plan / apply
     }
   }

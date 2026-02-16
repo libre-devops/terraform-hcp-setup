@@ -49,7 +49,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_env"></a> [env](#input\_env) | Environment short code. Allowed values: dev, uat, prd. | `string` | `"dev"` | no |
-| <a name="input_layer_name"></a> [layer\_name](#input\_layer\_name) | The layer name of this terraform run | `string` | `"foundations"` | no |
+| <a name="input_layer_name"></a> [layer\_name](#input\_layer\_name) | The layer name of this terraform run | `string` | `"foundation"` | no |
 | <a name="input_long"></a> [long](#input\_long) | Long resource prefix used in naming (lowercase letters/numbers/hyphens). | `string` | `"libre-devops"` | no |
 | <a name="input_long_region"></a> [long\_region](#input\_long\_region) | Long code for Azure region. Allowed values: uksouth, ukwest, westeurope. | `string` | `"uksouth"` | no |
 | <a name="input_rbac_client_id"></a> [rbac\_client\_id](#input\_rbac\_client\_id) | Client ID for the RBAC Service Principal used by the azurerm.rbac provider alias. | `string` | `"373b0885-3dc7-4ee1-ae61-de80b175e3f2"` | no |
